@@ -1,0 +1,16 @@
+@import '../../colors.scss';
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+    margin: 0.8em;
+    align-items: center;
+    background-color: #ffffffea;
+    justify-content: space-between;
+    border-radius: 0.3em;
+
+    img {
+        width: 80%;
+    }
+}

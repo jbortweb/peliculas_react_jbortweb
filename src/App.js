@@ -3,6 +3,8 @@ import './App.css';
 import Home from './components/home/Home'
 import Movies from './components/movies/Movies';
 import Series from './components/series/Series';
+import SeriesTv from './components/seriesTv/SeriesTv';
+import MoviesFilm from './components/moviesFilm/MoviesFilm';
 
 function App() {
   return (
@@ -11,10 +13,12 @@ function App() {
             <h1>Aplicación de peliculas con el API de themoviedb por jbortweb</h1>
         </div>
       <BrowserRouter>
-      <Home/>     
       <Routes>
+        <Route exact path='/' element = {<Home/>}/>
         <Route path = '/series' element = {<Series/>} exact /> 
         <Route path = '/peliculas' element = {<Movies/>} exact />         
+        <Route path = '/:seriesType' element = {<SeriesTv/>} exact />         
+        <Route path = '/:moviesType' element = {<MoviesFilm/>} exact />         
       </Routes>
       </BrowserRouter>
     </div>
