@@ -14,7 +14,7 @@ function App() {
         </div>
       <BrowserRouter>
       <Routes>
-        <Route exact path='/' element = {<Home/>}/>
+        <Route path='/' element = {<Home/>} exact/>
         <Route path = '/series' element = {<Series/>} exact /> 
         <Route path = '/peliculas' element = {<Movies/>} exact />         
         <Route path = '/:seriesType' element = {<SeriesTv/>} exact />         
