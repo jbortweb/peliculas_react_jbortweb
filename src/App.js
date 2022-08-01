@@ -14,11 +14,11 @@ function App() {
         </div>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element = {<Home/>} exact/>
-        <Route path = '/series' element = {<Series/>} exact /> 
-        <Route path = '/peliculas' element = {<Movies/>} exact />         
-        <Route path = '/:seriesType' element = {<SeriesTv/>} exact />         
-        <Route path = '/:moviesType' element = {<MoviesFilm/>} exact />         
+        <Route exact path='/' element = {<Home/>}/>
+        <Route exact path = '/series' element = {<Series/>}/> 
+        <Route exact path = '/peliculas' element = {<Movies/>}/>         
+        <Route exact path = '/tv/:seriesType' element = {<SeriesTv/>}/>        
+        <Route exact path = '/movie/:moviesType' element = {<MoviesFilm/>} />    
       </Routes>
       </BrowserRouter>
     </div>

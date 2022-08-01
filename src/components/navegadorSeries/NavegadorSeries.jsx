@@ -1,27 +1,26 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export const Navegador = () => {
-        
+export const NavegadorSeries = () => {
   return (
     <div className='container'>
         
         <div className='container-button'>
                 <nav  className='nav-header'>
                     <ul>
-                    <NavLink to='/series'>
+                    <NavLink to='/peliculas'>
                         <li>
-                            Series
+                            Películas
                         </li>
                     </NavLink>
-                    <NavLink to='/movie/popular'>
+                    <NavLink to='/tv/popular'>
                         <li>
-                            Películas más populares
+                            Series más populares
                         </li>
                     </NavLink>
-                    <NavLink to='/movie/top_rated'>
+                    <NavLink to='/tv/top_rated'>
                         <li>
-                            Películas más votadas
+                            Series más votadas
                         </li>
                     </NavLink>
                 </ul>

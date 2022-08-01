@@ -33,7 +33,7 @@ const MoviesFilm = () => {
   return (
     <div>
     <div>
-      <Navegador movies/>
+      <Navegador/>
     </div>
     <div className="container-movies">
       {movies?.map(movie=><Movie key={movie.id} movie={movie}/>)}
