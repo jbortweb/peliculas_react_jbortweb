@@ -29,8 +29,8 @@ npm start
 
 ## Tecnología
 
-- React, react-router-dom.
-- UseState, BrowserRouter, Route, Routes, NavLink.
+- React, react-router-dom, Axios.
+- UseState,useEffect, BrowserRouter, Route, Routes, NavLink.
 - Jsx, Scss
 
 ## Dirección web 
