@@ -12,7 +12,7 @@ const Movies = () => {
   const [pages,setpages] = useState(1);
   
   useEffect(()=> {
-    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=9218b9bd6999a8af1b8972bb1b4b815a&language=es-ES&page=${pages}`)
+    axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=9218b9bd6999a8af1b8972bb1b4b815a&language=es-ES&page=${pages}`)
     .then(res => setMovies(res.data.results))
     .catch(console.error);        
   },[pages]);
