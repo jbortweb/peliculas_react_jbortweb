@@ -35,7 +35,7 @@ const Series = (props) => {
                 <NavegadorSeries/>
             </div>
             <div  className= 'container-series'>
-                {series?.map(serie=><Serie key={serie.id} serie={serie}/>)}  
+                {series?.map(serie=><Serie key={serie.id} serie={serie} poster_path={serie.poster_path} vote_average={serie.vote_average}release_date={serie.release_date} overview={serie.overview}/>)}  
             </div>
             <div className='container-icons'>
                 <button
