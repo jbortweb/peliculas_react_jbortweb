@@ -7,7 +7,7 @@ import './SeriesTv.scss';
 import {FaArrowLeft} from "react-icons/fa";
 import {FaArrowRight} from "react-icons/fa";
 
-const Series = (props) => {
+const Series = () => {
     const {seriesType} = useParams();
     const [series,setSeries] = useState([]);
     const [pages,setpages] = useState(1);
@@ -24,7 +24,7 @@ const Series = (props) => {
         };
   
           const changeless = () => {
-            if (pages > 1) {
+            if (pages > 0) {
               setpages(pages - 1);
             }
         };

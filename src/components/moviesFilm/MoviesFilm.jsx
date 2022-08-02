@@ -7,7 +7,6 @@ import {FaArrowLeft} from "react-icons/fa";
 import {FaArrowRight} from "react-icons/fa";
 import { Navegador } from '../navegador/Navegador.jsx';
 
-
 const MoviesFilm = () => {
 
   const {moviesType} = useParams();
@@ -25,7 +24,7 @@ const MoviesFilm = () => {
   }
 
   const changeless = () => {
-    if (pages > 1) {
+    if (pages > 0) {
      setpages (pages - 1);
     }
   }

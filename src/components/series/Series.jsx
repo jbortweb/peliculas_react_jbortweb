@@ -16,7 +16,7 @@ const Series = () => {
         axios.get(`https://api.themoviedb.org/3/tv/on_the_air?api_key=9218b9bd6999a8af1b8972bb1b4b815a&language=es-ES&page=${pages}`)
         .then(res => setSeries(res.data.results))
         .catch(console.error);        
-    	},[series,pages]);
+    	},[pages]);
 
         const changeplus = () => {
           setpages(pages + 1);
